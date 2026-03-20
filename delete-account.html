@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Neev Academy</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a6cf7;
+            --secondary-color: #6a11cb;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --secondary-text: #666666;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --border-radius: 16px;
+            --accent-bg: #fdfdfd;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            color: var(--secondary-text);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .content h2 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .steps {
+            background: var(--accent-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+        .steps a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .steps a:hover {
+            text-decoration: underline;
+        }
+
+        .summary-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .summary-list li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .summary-list li::before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--secondary-text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        footer {
+            margin-top: 30px;
+            color: var(--secondary-text);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Neev Academy</h1>
+            <p>Account Deletion Request</p>
+        </header>
+
+        <div class="content">
+            <p>Users can request account deletion by following these steps:</p>
+
+            <div class="steps">
+                <ol>
+                    <li>Send an email to: <a href="mailto:srikarnitin998@gmail.com">srikarnitin998@gmail.com</a></li>
+                    <li>Subject: <strong>"Delete My Account"</strong></li>
+                    <li>Include your registered email ID</li>
+                </ol>
+            </div>
+
+            <h2>DATA DELETION DETAILS:</h2>
+            <p>We will delete:</p>
+            <ul class="summary-list">
+                <li>User account</li>
+                <li>Profile information</li>
+                <li>Course access data</li>
+            </ul>
+
+            <h2>DATA RETENTION:</h2>
+            <p>• Data may be retained for up to <strong>7 days</strong> for security purposes</p>
+        </div>
+
+        <a href="index.html" class="back-link">&larr; Back to Privacy Policy</a>
+    </div>
+
+    <footer>
+        <p>Neev Academy &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
